@@ -1,0 +1,6 @@
+[submodule "backend-nebri-amazon"]
+	path = backend-nebri-amazon
+	url = https://github.com/AlvaroPaniego/backend-nebri-amazon.git
+[submodule "frontend-nebri-amazon"]
+	path = frontend-nebri-amazon
+	url = https://github.com/AlvaroPaniego/frontend-nebri-amazon.git
