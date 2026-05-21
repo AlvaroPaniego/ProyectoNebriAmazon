@@ -7,17 +7,17 @@
       "skillPath": ".agents/skills/backend-development/SKILL.md",
       "computedHash": "7a3f4e24ebc0a87612f02271891b979c5c16ff5bc49386c9e0132b85cf55de90"
     },
+    "clean-code": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/clean-code/SKILL.md",
+      "computedHash": "74bf6ded4f61ddcb593e7a29beb96c284f888cbe0639ad6e23710447c36ff19a"
+    },
     "frontend-development": {
       "source": "local",
       "sourceType": "local",
       "skillPath": ".agents/skills/frontend-development/SKILL.md",
       "computedHash": "9b4f5d24ec0a986612f02281891b979c5c16ff5bc50386c9e0232b85cf66df91"
-    },
-    "clean-code": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": ".agents/skills/clean-code/SKILL.md",
-      "computedHash": "4c9f7a24ed0b986612f02281891c879c5c26ff5bc50386c9e0332b85cf77ef92"
     },
     "software-architecture": {
       "source": "local",
