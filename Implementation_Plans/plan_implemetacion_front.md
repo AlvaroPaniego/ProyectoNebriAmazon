@@ -414,6 +414,17 @@ De acuerdo al cronograma maestro, el desarrollo del cliente se estructurará de 
     4.  Comprobar el cumplimiento de contraste cromático y lectura semántica según la especificación WCAG 2.1 AA.
     5.  Someter el código a la auditoría estricta de `code-inspector` garantizando cero acoplamiento, alta cohesión y diseño SOLID.
 
+## 📅 Iteración 7: Orquestación e Integración de la Vista Principal
+*   **Objetivos:** Consolidar y orquestar de manera unificada todos los sistemas modulares independientes dentro del layout raíz de la página de inicio (HomeView), garantizando el flujo correcto de los almacenes de Pinia.
+*   **Tareas:**
+    1. Codificar la vista principal en `src/views/HomeView.vue` importando semánticamente los organismos construidos: `AppNavbar.vue`, `CategoryGrid.vue` y `ChatbotWidget.vue`.
+    2. Vincular el ciclo de vida de la vista (`onMounted`) para disparar la inicialización del carrito del usuario (`initializeCart`) y verificar el estado de la sesión si existe un token persistido.
+    3. Garantizar que no existan colisiones de estilos Vanilla CSS ni fugas de eventos reactivos en el contenedor principal (`<main class="home-container">`).
+*   **Criterios de Aceptación:**
+    *   **Cero Acoplamiento:** La vista HomeView.vue solo debe actuar como orquestadora estructural; no debe incluir llamadas directas a Axios ni mutaciones directas de estado fuera de las acciones de Pinia, manteniendo un diseño SOLID estricto evaluado con 10.0/10.0 por el inspector.
+    *   **Estabilidad de Interfaz:** Al interactuar con el Chatbot o añadir elementos desde el grid, la barra de navegación debe reflejar reactivamente los cambios en tiempo real (como el contador de BaseBadge.vue) sin provocar re-renderizados completos de la página.
+    *   **Accesibilidad Semántica Completa:** La composición total de la Home debe pasar la auditoría estructural de HTML5 (uso de etiquetas `<header>`, `<nav>`, `<main>`, `<footer>`) garantizando la navegación por teclado fluida y el enfoque visual de los componentes activos.
+
 ---
 
 ## 🏆 9. Criterios de Aceptación y QA (Definition of Done)
